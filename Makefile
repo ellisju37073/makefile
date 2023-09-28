@@ -3,6 +3,8 @@
 
 clone:
 	git clone https://github.com/RTCedu/CNA450_flaskr.git
+directory:
+	cd CNA450_flaskr & venv\Scripts\activate.bat
 
 update:
 	git pull
@@ -11,7 +13,7 @@ run:
 	cd CNA450_flaskr & set FLASK_APP=flaskr & set FLASK_ENV=development & venv\Scripts\activate.bat & flask init-db & flask run
 
 setup:
-	cd CNA450_flaskr & py -3 -m venv venv & venv\bin\activate & pip install -e .
+	 cd CNA450_flaskr & chdir & py -3 -m venv venv & venv\Scripts\activate.bat & pip install -e .
 
 clean:
 	rmdir /s CNA450_flaskr
