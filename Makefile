@@ -21,7 +21,7 @@ clean:
 coverage:
 	cd CNA450_flaskr & set FLASK_APP=flaskr & set FLASK_ENV=development & venv\Scripts\activate.bat & pip install .[test] & coverage run -m pytest & coverage report & coverage html
 
-test: 
+run_test: 
 	cd CNA450_flaskr & set FLASK_APP=flaskr & set FLASK_ENV=development & venv\Scripts\activate.bat & pip install .[test] & pytest
 
 test_and_coverage:
